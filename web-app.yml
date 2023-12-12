@@ -1,7 +1,7 @@
 build:
   version: "3.0"
 
-cards:
+web-app:
   message: "Welcome to healthcare web app related local APIs "
   contactDetails:
     name: "Dragos Lech - Developer"
