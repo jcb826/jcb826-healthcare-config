@@ -2,7 +2,7 @@ build:
   version: "3.0"
 
 diabete-scoring:
-  message: "Welcome to Diabete scoring related local APIs "
+  message: "Welcome to healthcare Diabete scoring related local APIs "
   contactDetails:
   name: "Cherryl Pankaj - QA Lead"
     email: "cherryl@healthcare.com"
