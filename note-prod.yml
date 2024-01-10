@@ -1,7 +1,7 @@
 build:
   version: "1.0"
 
-loans:
+note:
   message: "Welcome to Healthcare note related prod APIs "
   contactDetails:
     name: "Pelias Sudhir - Product Owner"
