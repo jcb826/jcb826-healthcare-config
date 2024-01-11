@@ -1,7 +1,7 @@
 build:
   version: "2.0"
 
-loans:
+patient:
   message: "Welcome to healthcare Patient related QA APIs "
   contactDetails:
     name: "Cyrano Marita - QA Lead"
