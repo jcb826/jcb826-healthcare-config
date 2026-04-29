@@ -1,9 +1,5 @@
 server:
   port: 9000
-  datasource:
-    url: jdbc:mysql://localhost:3308/patientdb
-    username: root
-    password: root
   application:
     name: "patient"
   profiles:
