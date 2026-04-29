@@ -9,3 +9,30 @@ patient:
   onCallSupport:
     - (723) 656-8709
     - (156) 342-0956
+  
+server:
+  port: 8080
+spring:
+  application:
+    name: "patient"
+  profiles:
+    active: "prod"
+  datasource:
+    url: jdbc:mysql://localhost:3308/patientdb
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+  sql:
+    init:
+      mode: always
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
