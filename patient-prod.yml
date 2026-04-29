@@ -1,11 +1,15 @@
 server:
   port: 9020
-  application:
-    name: "patient"
-  profiles:
-    active: "prod"
   jpa:
     show-sql: true
   sql:
     init:
       mode: always
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
