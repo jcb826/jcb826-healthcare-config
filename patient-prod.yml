@@ -13,3 +13,7 @@ server:
         enabled: true
         health-check-path: /actuator/health
         health-check-interval: 15s
+  datasource:
+    url: jdbc:mysql://localhost:3308/patientdb
+    username: root
+    password: root 
