@@ -1,11 +1,45 @@
 build:
   version: "3.0"
 
-note:
-  message: "Welcome to Healthcare note related local APIs "
+patient:
+  message: "Welcome to Healthcare patient related local APIs"
   contactDetails:
     name: "Amaal Grega - Developer"
     email: "amaal@healthcare.com"
   onCallSupport:
-    - (452) 456-2176
-    - (546) 764-8934
+    - "(452) 456-2176"
+    - "(546) 764-8934"
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "patient"
+
+  profiles:
+    active: "prod"
+
+  datasource:
+    url: jdbc:mysql://localhost:3308/patientdb
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
