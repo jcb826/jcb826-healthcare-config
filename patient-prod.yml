@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 9020
   application:
     name: "patient"
   profiles:
