@@ -1,15 +1,11 @@
-server:
-  port: 9020
-  jpa:
-    show-sql: true
-  sql:
-    init:
-      mode: always
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        enabled: true
-        health-check-path: /actuator/health
-        health-check-interval: 15s
+build:
+  version: "1.0"
+
+note:
+  message: "Welcome to Healthcare patient related prod APIs "
+  contactDetails:
+    name: "Pelias Sudhir - Product Owner"
+    email: "pelias@healthcare.com"
+  onCallSupport:
+    - (723) 656-8709
+    - (156) 342-0956
